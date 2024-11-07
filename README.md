@@ -14,6 +14,12 @@ This script configures the network settings and applies optimized configurations
 
 ## How to Use
 
+### For See VPS Information
+
+```
+lscpu
+```
+
 ### Clone the Repository
 First, clone this repository to your server:
 ```bash
