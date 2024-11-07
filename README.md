@@ -45,5 +45,34 @@ A powerful and highly optimized script to configure reverse tunnels on your Iran
    chmod +x IranTunnelSetup.sh
    sudo ./IranTunnelSetup.sh
    ```
-   
+   # Kharej Tunnel Setup Script
+
+An advanced and highly optimized script designed to configure reverse tunnels on servers located outside of Iran. This script enables you to bypass firewalls, set up fast and efficient tunnels, and connect multiple servers seamlessly for a robust network configuration.
+
+---
+
+## Features:
+- **Automatic Configuration**: Quickly set up your server with minimal effort.
+- **Multi-Protocol Support**: Supports **TCP**, **TCPMUX**, and **WS** protocols.
+- **Firewall Bypass**: Ensures high-speed, unrestricted connectivity.
+- **Server Linking**: Connect multiple servers to create a unified and efficient tunnel network.
+- **Highly Optimized**: Engineered for top performance and reliability.
+
+---
+
+## How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abzyw23/KharejTunnelSetup.sh
+   cd KharejTunnelSetup.sh
+   chmod +x KharejTunnelSetup.sh
+   sudo ./KharejTunnelSetup.sh
+   ```
+   ## Support
+
+For further assistance or premium configurations, feel free to contact us:
+
+- **Telegram**: [@AsanFillter](https://t.me/AsanFillter)  
+- **Developer Support**: [@Hamedrn](https://t.me/Hamedrn)
 
