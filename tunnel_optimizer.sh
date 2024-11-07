@@ -11,7 +11,7 @@ RESET="\e[0m"
 
 # Banner
 echo -e "${CYAN}"
-echo -e "
+cat << "EOF"
   /$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$/$$$$$$ /$$       /$$    /$$$$$$$$/$$$$$$$$ /$$$$$$$ 
  /$$__  $$ /$$__  $$ /$$__  $$| $$$ | $$| $$_____/_  $$_/| $$      | $$   |__  $$__/ $$_____/| $$__  $$
 | $$  \ $$| $$  \__/| $$  \ $$| $$$$| $$| $$       | $$  | $$      | $$      | $$  | $$      | $$  \ $$
@@ -20,7 +20,14 @@ echo -e "
 | $$  | $$ /$$  \ $$| $$  | $$| $$\  $$$| $$       | $$  | $$      | $$      | $$  | $$      | $$  \ $$
 | $$  | $$|  $$$$$$/| $$  | $$| $$ \  $$| $$      /$$$$$$| $$$$$$$$| $$$$$$$$| $$  | $$$$$$$$| $$  | $$
 |__/  |__/ \______/ |__/  |__/|__/  \__/|__/     |______/|________/|________/|__/  |________/|__/  |_/
-"
+
+                ╔═══════ AsanFillter Tunnel Configuration - Standard Edition ═══════╗
+                ║                                                                   ║
+                ║  • Telegram: @AsanFillter                                        ║
+                ║  • Premium Configuration: @Hamedrn                               ║
+                ║                                                                   ║
+                ╚═══════════════════════════════════════════════════════════════════╝
+EOF
 echo -e "${RESET}"
 
 # Loading Animation
@@ -38,6 +45,12 @@ loading() {
     done
     echo -ne "\b\b\b\b\b\b${GREEN}Done!${RESET}\n"
 }
+
+# Installing prerequisites
+echo -e "${YELLOW}Installing prerequisites...${RESET}"
+(
+    sudo apt update && sudo apt install ethtool -y
+) & loading $!
 
 # Asking for file directory and name
 read -p "Enter the directory to save the file: " directory
