@@ -18,7 +18,7 @@ This script configures the network settings and applies optimized configurations
 First, clone this repository to your server:
 ```bash
 git clone https://github.com/abzyw23/tunnel_optimizer.sh
-cd tunnel_optimizer
+cd tunnel_optimizer.sh
 chmod +x tunnel_optimizer.sh
 sudo ./tunnel_optimizer.sh
 ```
