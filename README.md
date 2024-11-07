@@ -19,7 +19,7 @@ First, clone this repository to your server:
 ```bash
 git clone https://github.com/abzyw23/Tunnel-Config.git
 cd Tunnel-Config
-chmod +x tunnel_optimizer
+chmod +x tunnel_optimizer.sh
 chmod +x IranTunnelSetup.sh
 chmod +x KharejTunnelSetup.sh
 sudo ./tunnel_optimizer.sh
