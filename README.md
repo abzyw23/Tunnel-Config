@@ -19,6 +19,9 @@ This script configures the network settings and applies optimized configurations
 ```
 lscpu
 ```
+```
+ip a
+```
 
 ### Clone the Repository
 First, clone this repository to your server:
