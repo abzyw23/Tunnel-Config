@@ -17,9 +17,11 @@ This script configures the network settings and applies optimized configurations
 ### Clone the Repository
 First, clone this repository to your server:
 ```bash
-git clone https://github.com/abzyw23/tunnel_optimizer.sh
-cd tunnel_optimizer.sh
-chmod +x tunnel_optimizer.sh
+git clone https://github.com/abzyw23/Tunnel-Config.git
+cd Tunnel-Config
+chmod +x tunnel_optimizer
+chmod +x IranTunnelSetup.sh
+chmod +x KharejTunnelSetup.sh
 sudo ./tunnel_optimizer.sh
 ```
 # Iran Tunnel Setup Script
@@ -35,16 +37,6 @@ A powerful and highly optimized script to configure reverse tunnels on your Iran
 - **Highly Optimized**: Designed for maximum performance and efficiency.
 
 ---
-
-## How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/abzyw23/IranTunnelSetup.sh
-   cd IranTunnelSetup.sh
-   chmod +x IranTunnelSetup.sh
-   sudo ./IranTunnelSetup.sh
-   ```
    # Kharej Tunnel Setup Script
 
 An advanced and highly optimized script designed to configure reverse tunnels on servers located outside of Iran. This script enables you to bypass firewalls, set up fast and efficient tunnels, and connect multiple servers seamlessly for a robust network configuration.
@@ -58,17 +50,7 @@ An advanced and highly optimized script designed to configure reverse tunnels on
 - **Server Linking**: Connect multiple servers to create a unified and efficient tunnel network.
 - **Highly Optimized**: Engineered for top performance and reliability.
 
----
 
-## How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/abzyw23/KharejTunnelSetup.sh
-   cd KharejTunnelSetup.sh
-   chmod +x KharejTunnelSetup.sh
-   sudo ./KharejTunnelSetup.sh
-   ```
    ## Support
 
 For further assistance or premium configurations, feel free to contact us:
