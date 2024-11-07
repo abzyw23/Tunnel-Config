@@ -12,21 +12,14 @@ RESET="\e[0m"
 # Banner
 echo -e "${CYAN}"
 echo -e "
-$$$$$$\  $$$$$$\  $$$$$$\ $$\   $$\       $$$$$$$$\$$$$$$\$$\      $$\   $$$$$$$$\$$$$$$$$\$$$$$$$\  
-$$  __$$\$$  __$$\$$  __$$\$$$\  $$ |      $$  _____\_$$  _$$ |     $$ |  \__$$  __$$  _____$$  __$$\ 
-$$ /  $$ $$ /  \__$$ /  $$ $$$$\ $$ |      $$ |       $$ | $$ |     $$ |     $$ |  $$ |     $$ |  $$ |
-$$$$$$$$ \$$$$$$\ $$$$$$$$ $$ $$\$$ |      $$$$$\     $$ | $$ |     $$ |     $$ |  $$$$$\   $$$$$$$  |
-$$  __$$ |\____$$\$$  __$$ $$ \$$$$ |      $$  __|    $$ | $$ |     $$ |     $$ |  $$  __|  $$  __$$< 
-$$ |  $$ $$\   $$ $$ |  $$ $$ |\$$$ |      $$ |       $$ | $$ |     $$ |     $$ |  $$ |     $$ |  $$ |
-$$ |  $$ \$$$$$$  $$ |  $$ $$ | \$$ |      $$ |     $$$$$$\$$$$$$$$\$$$$$$$$\$$ |  $$$$$$$$\$$ |  $$ |
-\__|  \__|\______/\__|  \__\__|  \__|      \__|     \______\________\________\__|  \________\__|  \__|
-
-                ╔═══════ AsanFillter Tunnel Configuration - Standard Edition ═══════╗
-                ║                                                                   ║
-                ║  • Telegram: @AsanFillter                                        ║
-                ║  • Premium Configuration: @Hamedrn                               ║
-                ║                                                                   ║
-                ╚═══════════════════════════════════════════════════════════════════╝
+  /$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$ /$$$$$$$$/$$$$$$ /$$       /$$    /$$$$$$$$/$$$$$$$$ /$$$$$$$ 
+ /$$__  $$ /$$__  $$ /$$__  $$| $$$ | $$| $$_____/_  $$_/| $$      | $$   |__  $$__/ $$_____/| $$__  $$
+| $$  \ $$| $$  \__/| $$  \ $$| $$$$| $$| $$       | $$  | $$      | $$      | $$  | $$      | $$  \ $$
+| $$$$$$$$|  $$$$$$ | $$$$$$$$| $$ $$ $$| $$$$$    | $$  | $$      | $$      | $$  | $$$$$   | $$$$$$$/
+| $$__  $$ \____  $$| $$__  $$| $$  $$$$| $$__/    | $$  | $$      | $$      | $$  | $$__/   | $$__  $$
+| $$  | $$ /$$  \ $$| $$  | $$| $$\  $$$| $$       | $$  | $$      | $$      | $$  | $$      | $$  \ $$
+| $$  | $$|  $$$$$$/| $$  | $$| $$ \  $$| $$      /$$$$$$| $$$$$$$$| $$$$$$$$| $$  | $$$$$$$$| $$  | $$
+|__/  |__/ \______/ |__/  |__/|__/  \__/|__/     |______/|________/|________/|__/  |________/|__/  |_/
 "
 echo -e "${RESET}"
 
@@ -48,11 +41,14 @@ loading() {
 
 # Asking for file directory and name
 read -p "Enter the directory to save the file: " directory
+mkdir -p "$directory"  # Create directory if it doesn't exist
 read -p "Enter the filename (without extension): " filename
 
 # Create file
 filepath="$directory/$filename.sh"
 touch "$filepath"
+chmod +x "$filepath"
+echo -e "${GREEN}File created: ${filepath}${RESET}"
 
 # Ask for interface name
 read -p "Enter the interface name: " interface
@@ -75,9 +71,6 @@ tc qdisc add dev $interface parent 1:30 handle 30: fq_pie
 tc qdisc add dev $interface parent 1:40 handle 40: htb
 tc filter add dev $interface protocol all parent 1: prio 1 u32 match u32 0 0 flowid 1:1
 EOF
-
-# Make the script executable
-chmod +x "$filepath"
 
 # Run the script
 (
