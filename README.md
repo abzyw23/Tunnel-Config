@@ -17,8 +17,8 @@ This script configures the network settings and applies optimized configurations
 ### Clone the Repository
 First, clone this repository to your server:
 ```bash
-git clone https://github.com/YourUsername/AsanFillter-Tunnel-Config.git
-cd AsanFillter-Tunnel-Config
-chmod +x configure_tunnel.sh
-sudo ./configure_tunnel.sh
+git clone https://github.com/abzyw23/tunnel_optimizer.sh
+cd tunnel_optimizer
+chmod +x tunnel_optimizer.sh
+sudo ./tunnel_optimizer.sh
 ```
