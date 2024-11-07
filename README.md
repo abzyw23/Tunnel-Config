@@ -42,6 +42,10 @@ A powerful and highly optimized script to configure reverse tunnels on your Iran
 - **Firewall Bypass**: Avoid restrictions and maintain high-speed connections.
 - **Highly Optimized**: Designed for maximum performance and efficiency.
 
+```
+./IranTunnelSetup.sh
+```
+
 ---
    # Kharej Tunnel Setup Script
 
@@ -56,6 +60,9 @@ An advanced and highly optimized script designed to configure reverse tunnels on
 - **Server Linking**: Connect multiple servers to create a unified and efficient tunnel network.
 - **Highly Optimized**: Engineered for top performance and reliability.
 
+```
+./KharejTunnelSetup.sh
+```
 
    ## Support
 
