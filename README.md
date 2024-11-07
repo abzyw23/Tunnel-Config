@@ -19,3 +19,6 @@ First, clone this repository to your server:
 ```bash
 git clone https://github.com/YourUsername/AsanFillter-Tunnel-Config.git
 cd AsanFillter-Tunnel-Config
+chmod +x configure_tunnel.sh
+sudo ./configure_tunnel.sh
+```
