@@ -9,6 +9,16 @@ This script configures the network settings and applies optimized configurations
 - Applies optimized `tc`, `ip`, and `ethtool` settings.
 - Saves all configurations in a user-specified file.
 - Interactive script with colorful animations.
+- High Performance: Optimized for handling massive concurrent connections efficiently.
+- Protocol Flexibility: Supports TCP, WebSocket (WS), and Secure WebSocket (WSS) transports.
+- UDP over TCP: Implements UDP traffic encapsulation and forwarding over a TCP connection for reliable delivery with built-in congestion control.
+- Multiplexing: Enables multiple connections over a single transport with SMUX.
+-  NAT & Firewall Bypass: Overcomes restrictions with reverse tunneling.
+- raffic Sniffing: Optional network traffic monitoring with logging support.
+- Configurable Keepalive: Adjustable keep-alive and heartbeat intervals for stable connections.
+- TLS Encryption: Secure connections via WSS with support for custom TLS certificates.
+- Web Interface: Real-time monitoring through a lightweight web interface.
+- Hot Reload Configuration: Supports dynamic configuration reloading without server restarts.
 
 ---
 
@@ -37,14 +47,6 @@ sudo ./tunnel_optimizer.sh
 
 A powerful and highly optimized script to configure reverse tunnels on your Iran-based server. This script allows you to bypass firewalls and run fast, efficient tunnels with three supported protocols: **TCP**, **TCPMUX**, and **WS**.
 
----
-
-## Features:
-- **Automatic Configuration**: Set up your server with ease.
-- **Multi-Protocol Support**: Enables **TCP**, **TCPMUX**, and **WS** protocols seamlessly.
-- **Firewall Bypass**: Avoid restrictions and maintain high-speed connections.
-- **Highly Optimized**: Designed for maximum performance and efficiency.
-
 ```
 ./IranTunnelSetup.sh
 ```
@@ -53,15 +55,6 @@ A powerful and highly optimized script to configure reverse tunnels on your Iran
    # Kharej Tunnel Setup Script
 
 An advanced and highly optimized script designed to configure reverse tunnels on servers located outside of Iran. This script enables you to bypass firewalls, set up fast and efficient tunnels, and connect multiple servers seamlessly for a robust network configuration.
-
----
-
-## Features:
-- **Automatic Configuration**: Quickly set up your server with minimal effort.
-- **Multi-Protocol Support**: Supports **TCP**, **TCPMUX**, and **WS** protocols.
-- **Firewall Bypass**: Ensures high-speed, unrestricted connectivity.
-- **Server Linking**: Connect multiple servers to create a unified and efficient tunnel network.
-- **Highly Optimized**: Engineered for top performance and reliability.
 
 ```
 ./KharejTunnelSetup.sh
