@@ -58,6 +58,10 @@ An advanced and highly optimized script designed to configure reverse tunnels on
 ./KharejTunnelSetup.sh
 ```
 
+**To create an inbound Marzban, you can use the following site:**
+
+[Marzban Inbound Generator](https://azavaxhuman.github.io/MarzbanInboundGenerator/v2/)
+
    ## Support
 
 For further assistance or premium configurations, feel free to contact us:
